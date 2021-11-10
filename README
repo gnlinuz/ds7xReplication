@@ -7,10 +7,11 @@ Tested on CenOS 7.x Java version 11 and Ubuntu 20.04 Java version 14.
 Default installation directory /opt/ds7Repl1, /opt/ds7Repl2
 
 Script checks for Java version and utilities like unzip and netstat,
-makes sure that the server ports will not conflic with any existing ones.
-Inserts 2 hostnames into hosts and creates a hosts.backup file under /etc.
+makes sure that the server ports will not conflic with any existing ones
+although installation script will discover any conflicts.
+Script inserts 2 hostnames into hosts and creates a hosts.backup file under /etc.
 It creates 2 files DEPLOYMENT_KEY and INSTALLATION text under /opt/ds7Repl1/opendj/
-administrator: uid=admin pass=Password1
+administrator: bind admin is uid=admin and pass=Password1
 
 Installation requirements
 Before execuete the script make sure you have installed Java version 11 or higher
