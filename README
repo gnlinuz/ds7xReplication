@@ -1,0 +1,25 @@
+Place the script in any folder like /tmp along with the DS zip file.
+Make the script executable ie chmod 755 installRepl.sh.
+Execute the script as root or sudo ./installRepl.sh
+
+This script installs on a sinle server two DS 7.x and initialises replication.
+Tested on CenOS 7.x Java version 11 and Ubuntu 20.04 Java version 14.
+Default installation directory /opt/ds7Repl1, /opt/ds7Repl2
+
+Script checks for Java version and utilities like unzip and netstat,
+makes sure that the server ports will not conflic with any existing ones.
+Inserts 2 hostnames into hosts and creates a hosts.backup file under /etc.
+It creates 2 files DEPLOYMENT_KEY and INSTALLATION text under /opt/ds7Repl1/opendj/
+administrator: uid=admin pass=Password1
+
+Installation requirements
+Before execuete the script make sure you have installed Java version 11 or higher
+include the DS-7.0.0.zip in the same directory where you execute the script,
+make sure that you have unzip and netstat utilities.
+(Install unzip sudo yum/apt install unzip net-tools -y).
+
+Optional:
+Change the settings to meet your installation requirments 
+edit the script and change installation settings at the top section # Settings
+  
+enjoy!  
